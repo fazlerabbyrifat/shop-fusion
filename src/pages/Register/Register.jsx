@@ -27,7 +27,7 @@ const Register = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         console.log(user);
-
+        setError("");
         updateUserProfile(name, phone)
           .then(() => {
             const savedUser = { name: name, phoneNumber: phone };
@@ -50,7 +50,7 @@ const Register = () => {
           });
       })
       .catch((error) => {
-        console.error("Error creating user:", error);
+        setError(error.message);
       });
   };
   const handlePhoneNumberChange = (e) => {
@@ -87,7 +87,6 @@ const Register = () => {
         </label>
         <input
           type="tel"
-          pattern="(\+)?880\d{10}"
           className="input input-bordered w-2/3 mb-4"
           value={phone}
           onChange={handlePhoneNumberChange}

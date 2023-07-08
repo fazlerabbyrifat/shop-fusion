@@ -1,21 +1,51 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import useAuth from './../../hooks/useAuth';
+import Swal from "sweetalert2";
 
 const Login = () => {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const {signIn} = useAuth();
+  const navigate = useNavigate();
 
-  const handleLogin = () => {
-    // const user = usersData.users.find((userData) => userData.phone === phone);
-    // if (user && user.password === password) {
-    //   const token = jwt.sign(user, "your-secret-key");
-    //   setPhone("");
-    //   setPassword("");
-    //   setError("");
-    // } else {
-    //   setError("Invalid credentials");
-    // }
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const email = `${phone}@example.com`;
+    console.log(email)
+    signIn(email, password)
+    .then(result => {
+        const user = result.user;
+        console.log(user);
+        setError("");
+        Swal.fire({
+          title: 'User successfully signed in',
+          showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+          },
+          hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+          }
+        });
+        navigate('/');
+    })
+    .catch((err) => {
+        setError(err.message);
+      });
+  };
+
+  const handlePhoneNumberChange = (e) => {
+    const inputPhoneNumber = e.target.value;
+    const cleanedPhoneNumber = inputPhoneNumber.replace(/\D/g, "").slice(0, 13);
+
+    if (cleanedPhoneNumber.startsWith("880")) {
+      setPhone(`+${cleanedPhoneNumber}`);
+    } else if (cleanedPhoneNumber.startsWith("1")) {
+      setPhone(`+880${cleanedPhoneNumber}`);
+    } else {
+      setPhone(cleanedPhoneNumber);
+    }
   };
 
   return (
@@ -28,10 +58,12 @@ const Login = () => {
           <span className="text-xl font-medium mb-3">Phone Number</span>
         </label>
         <input
-          type="number"
+          type="tel"
           className="input input-bordered w-2/3 mb-4"
           value={phone}
-          onChange={(e) => setPhone(e.target.value)}
+          onChange={handlePhoneNumberChange}
+          placeholder="Enter your mobile number"
+          required
         />
         <br />
         <label className="label">
