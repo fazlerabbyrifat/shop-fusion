@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Samsung S21",
+    "price": 99.99,
+    "rating": 4.5,
+    "image": "https://img.freepik.com/free-psd/smartphone-mockup_1310-812.jpg?w=996&t=st=1688841087~exp=1688841687~hmac=d7f667a1d0b032ad372e663f974d7499663a7fc1b8172039c271a7abea0704f0",
+    "total_reviews": 15,
+    "description": "Samsung Galaxy S20 Ultra ; Size, 6.9 inches, 114.0 cm2 (~89.9% screen-to-body ratio) ; Resolution, 1440 x 3200 pixels, 20:9 ratio (~511 ppi density)"
+  },
+  {
+    "id": 2,
+    "name": "Xiaomi Smart Watch",
+    "price": 29.99,
+    "rating": 4.4,
+    "image": "https://img.freepik.com/free-vector/realistic-fitness-trackers_23-2148530529.jpg?w=740&t=st=1688841257~exp=1688841857~hmac=efc2582ca8fbf655ae415dae3033cfd395e71c0078f0a8bb2ef79d86a379ebd1",
+    "total_reviews": 28,
+    "description": "Xiaomi Mi Watch ; Dimensions, 53.3 x 45.9 x 11.8 mm (2.10 x 1.81 x 0.46 in) ; Weight, 32 g (1.13 oz) ; SIM, No ; Waterproof (5ATM) Up to 50 meters depth for 10 min"
+  },
+  {
+    "id": 3,
+    "name": "Apple Air pods",
+    "price": 39.99,
+    "rating": 4.7,
+    "image": "https://img.freepik.com/free-vector/headphones-wireless-realistic-composition-with-isolated-image-phones-with-power-bank-dock-station-with-reflections-vector-illustration_1284-73201.jpg?w=740&t=st=1688841412~exp=1688842012~hmac=11626920264ec8c83f27b518e96b99878c379bd1895803a5edf7dbc8817b2c16",
+    "total_reviews": 35,
+    "description": "Apple AirPods (3rd Generation) Wireless Earbuds with Lightning Charging Case. Spatial Audio, Sweat and Water Resistant, Up to 30 Hours of Battery Life."
+  },
+  {
+    "id": 4,
+    "name": "Premium Leather Shoe",
+    "price": 28.5,
+    "rating": 4.5,
+    "image": "https://img.freepik.com/free-photo/red-leather-shoes-stand-light-wooden-floor_8353-691.jpg?w=996&t=st=1688841506~exp=1688842106~hmac=af2e09cfd10b4b9da4ca2ea39ecb0041f6d443c8df11c35749668e935f42fe6e",
+    "total_reviews": 28,
+    "description": "Pure leather premium edition for stylish men"
+  },
+  {
+    "id": 5,
+    "name": "Gorgeous Ladies Handbag",
+    "price": 21.8,
+    "rating": 4.3,
+    "image": "https://img.freepik.com/free-photo/beautiful-elegance-luxury-fashion-women-bag_74190-4900.jpg?w=996&t=st=1688841595~exp=1688842195~hmac=7b2222f5eaa4753f3e4e366a50ffcbb4679f1f09318bf0829cbb1b445f945c1b",
+    "total_reviews": 32,
+    "description": "A new collection which becomes more popular in recent days."
+  },
+  {
+    "id": 6,
+    "name": "Narzo pro",
+    "price": 52.8,
+    "rating": 4.2,
+    "image": "https://cdn1.smartprix.com/rx-iK33utT7h-w1200-h1200/K33utT7h.jpg",
+    "total_reviews": 16,
+    "description": "A new collection with a better camera and long lasting battery."
+  },
+  {
+    "id": 7,
+    "name": "Gold Watch",
+    "price": 73.2,
+    "rating": 4.9,
+    "image": "https://media.istockphoto.com/id/471712723/photo/watch.jpg?s=612x612&w=0&k=20&c=iMEdtY6uP3iFURngL9qAzzMnWYSkPmHrxIlYIEfduvM=",
+    "total_reviews": 22,
+    "description": "A brand new stylish gold watch."
+  },
+  {
+    "id": 8,
+    "name": "Gorgeous Pearls Set",
+    "price": 41.8,
+    "rating": 4.6,
+    "image": "https://static01.nyt.com/images/2022/12/06/multimedia/06sp-jewelry-trends-inyt-green/06sp-jewelry-trends-inyt-green-videoSixteenByNineJumbo1600.jpg",
+    "total_reviews": 35,
+    "description": "A jewelry set which consists pearl ear-rings, a necklace. It is a most attractive collection."
+  }
+]
