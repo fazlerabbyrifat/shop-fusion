@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Super Fast Delivery",
+      "image":
+        "https://img.freepik.com/free-vector/delivery-service-with-masks-concept_23-2148509518.jpg?w=996&t=st=1688843224~exp=1688843824~hmac=bdf89373a6386ef054690034c477034b80fa8e7a387c0d588a604d36ae7fa476",
+      "description":
+        "We provided super fast free delivery systems for our customers"
+    },
+    {
+      "id": 2,
+      "name": "Guaranteed Refund Policy",
+      "image":
+        "https://img.freepik.com/free-vector/refund-concept-illustration_114360-7013.jpg?w=740&t=st=1688843349~exp=1688843949~hmac=5bc7cf41f6e2ed12c29a30c703df4339f9faa7a4b5f182a5c0e65676a4a45f5f",
+      "description":
+        "If there any defect found in our products, you can easily get refund or exchange your product"
+    },
+    {
+      "id": 3,
+      "name": "Payment Options",
+      "image":
+        "https://img.freepik.com/free-vector/e-wallet-concept-illustration_114360-7691.jpg?w=740&t=st=1688843564~exp=1688844164~hmac=0fa8f13762f0320ab9818e6b62bc2608dbff0f9988dcd72d6ff005e78154e21c",
+      "description":
+        "You can easily pay us, we have all kinds of payment options available"
+    }
+  ]
