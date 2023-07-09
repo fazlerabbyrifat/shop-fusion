@@ -11,11 +11,13 @@ import Dashboard from "../layout/Dashboard";
 import AdminHome from "../pages/Dashboard/AdminHome/AdminHome";
 import AddProduct from "../pages/Dashboard/AddProduct/AddProduct";
 import MyProducts from "../pages/Dashboard/MyProducts/MyProducts";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Main></Main>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
