@@ -3,10 +3,18 @@ import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { FaShoppingCart } from "react-icons/fa";
 import useCart from "../../hooks/useCart";
+import useAuth from "../../hooks/useAuth";
 
 const Navbar = () => {
-  const {cart} = useCart();
-  
+  const { cart } = useCart();
+  const { user, logOut } = useAuth();
+
+  const handleLogout = () => {
+    logOut()
+      .then(() => {})
+      .catch((error) => console.log(error));
+  };
+
   const navItems = (
     <>
       <li>
@@ -56,16 +64,27 @@ const Navbar = () => {
         </div>
         <Link to="/" className="btn btn-ghost normal-case">
           <img className="w-10" src={logo} alt="" />
-          <span className="text-2xl md:text-3xl lg:text-5xl font-bold uppercase">Shop Fusion</span>
+          <span className="text-2xl md:text-3xl lg:text-5xl font-bold uppercase">
+            Shop Fusion
+          </span>
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navItems}</ul>
       </div>
       <div className="navbar-end">
-        <Link to='/login'>
-          <button className="btn btn-secondary btn-outline">Login</button>
-        </Link>
+        {user ? (
+          <button
+            onClick={handleLogout}
+            className="btn btn-secondary btn-outline"
+          >
+            Logout
+          </button>
+        ) : (
+          <Link to="/login">
+            <button className="btn btn-secondary btn-outline">Login</button>
+          </Link>
+        )}
       </div>
     </div>
   );

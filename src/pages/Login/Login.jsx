@@ -74,6 +74,8 @@ const Login = () => {
           className="input input-bordered w-2/3 mb-4"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          placeholder="Enter your password"
+          required
         />
         <br />
         <input type="submit" className="btn btn-primary" value="Login" />
