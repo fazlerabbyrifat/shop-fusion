@@ -31,7 +31,7 @@ const Register = () => {
         updateUserProfile(name, phone)
           .then(() => {
             const savedUser = { name: name, phoneNumber: phone };
-            axios.post("http://localhost:5000/users", savedUser).then((res) => {
+            axios.post("https://shop-fusion-server.vercel.app/users", savedUser).then((res) => {
               if (res.data.insertedId) {
                 
                 Swal.fire({

@@ -22,10 +22,10 @@ const Footer = () => {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link >Products</Link>
+                <Link to="/products">Products</Link>
               </li>
               <li>
-                <Link >Dashboard</Link>
+                <Link to="/dashboard/adminHome">Dashboard</Link>
               </li>
             </ul>
           </div>
