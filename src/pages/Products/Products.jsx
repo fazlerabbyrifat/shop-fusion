@@ -13,14 +13,14 @@ const Products = () => {
       .then((data) => setProducts(data));
   }, []);
 
-  const handleDetails = (id) => {
-    navigate(`/products/${id}`);
+  const handleDetails = (product) => {
+
+    navigate(`/product/${product.id}`, { state: { product } });
   };
 
   return (
     <div className="overflow-x-auto my-10 mx-5 p-5">
       <table className="table">
-        {/* head */}
         <thead>
           <tr>
             <th>#</th>
@@ -47,7 +47,7 @@ const Products = () => {
               <td>${product.price}</td>
               <td>
                 <button
-                  onClick={() => handleDetails(product.id)}
+                  onClick={() => handleDetails(product)}
                   className="btn btn-primary"
                 >
                   See More

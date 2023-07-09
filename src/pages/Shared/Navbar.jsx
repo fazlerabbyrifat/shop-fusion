@@ -2,8 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import { FaShoppingCart } from "react-icons/fa";
+import useCart from "../../hooks/useCart";
 
 const Navbar = () => {
+  const {cart} = useCart();
+  console.log(cart)
   const navItems = (
     <>
       <li>
@@ -15,6 +18,7 @@ const Navbar = () => {
       <li>
         <Link to="/">
           <FaShoppingCart></FaShoppingCart>
+          <span>{cart?.length}</span>
         </Link>
       </li>
       <li>
