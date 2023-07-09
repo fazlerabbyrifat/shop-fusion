@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Samsung S21",
+        "price": 99.99,
+        "rating": 4.5,
+        "image": "https://img.freepik.com/free-psd/smartphone-mockup_1310-812.jpg?w=996&t=st=1688841087~exp=1688841687~hmac=d7f667a1d0b032ad372e663f974d7499663a7fc1b8172039c271a7abea0704f0",
+        "total_reviews": 15,
+        "description": "Samsung Galaxy S20 Ultra ; Size, 6.9 inches, 114.0 cm2 (~89.9% screen-to-body ratio) ; Resolution, 1440 x 3200 pixels, 20:9 ratio (~511 ppi density)"
+      },
+      {
+        "id": 2,
+        "name": "Xiaomi Smart Watch",
+        "price": 29.99,
+        "rating": 4.4,
+        "image": "https://img.freepik.com/free-vector/realistic-fitness-trackers_23-2148530529.jpg?w=740&t=st=1688841257~exp=1688841857~hmac=efc2582ca8fbf655ae415dae3033cfd395e71c0078f0a8bb2ef79d86a379ebd1",
+        "total_reviews": 28,
+        "description": "Xiaomi Mi Watch ; Dimensions, 53.3 x 45.9 x 11.8 mm (2.10 x 1.81 x 0.46 in) ; Weight, 32 g (1.13 oz) ; SIM, No ; Waterproof (5ATM) Up to 50 meters depth for 10 min"
+      },
+      {
+        "id": 6,
+        "name": "Narzo pro",
+        "price": 52.8,
+        "rating": 4.2,
+        "image": "https://cdn1.smartprix.com/rx-iK33utT7h-w1200-h1200/K33utT7h.jpg",
+        "total_reviews": 16,
+        "description": "A new collection with a better camera and long lasting battery."
+      }
+]

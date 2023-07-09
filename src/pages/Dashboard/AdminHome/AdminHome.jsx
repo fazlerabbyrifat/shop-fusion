@@ -56,7 +56,7 @@ const AdminHome = () => {
     <div className="w-full ml-20">
       <h1 className="text-3xl font-bold mb-10">Hi, {user?.displayName}</h1>
       {stats?.map((stat) => (
-        <div id={stat?.id} className="stats shadow">
+        <div id={stat?.id} className="stats shadow w-full">
           <div className="stat place-items-center">
             <div className="stat-value">{stat?.revenue}</div>
             <div className="stat-title">Revenue</div>
@@ -77,7 +77,7 @@ const AdminHome = () => {
           </div>
         </div>
       ))}
-      <div className="w-1/2 mt-10">
+      <div className="w-full mt-10">
         <BarChart
           width={500}
           height={300}

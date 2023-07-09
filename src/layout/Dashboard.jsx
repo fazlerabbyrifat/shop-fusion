@@ -25,9 +25,12 @@ const Dashboard = () => {
             </NavLink>
           </li>
           <li>
-          <NavLink to="/dashboard/addProducts">
+          <NavLink to="/dashboard/addProduct">
               <MdProductionQuantityLimits></MdProductionQuantityLimits> Add Products
             </NavLink>
+          </li>
+          <li>
+            <NavLink to="/dashboard/myProducts">My Products</NavLink>
           </li>
           <div className="divider"></div> 
           <li>

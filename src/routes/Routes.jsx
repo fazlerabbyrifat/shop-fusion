@@ -9,6 +9,8 @@ import MyCart from "../pages/MyCart/MyCart";
 import Payment from "../pages/Payment/Payment";
 import Dashboard from "../layout/Dashboard";
 import AdminHome from "../pages/Dashboard/AdminHome/AdminHome";
+import AddProduct from "../pages/Dashboard/AddProduct/AddProduct";
+import MyProducts from "../pages/Dashboard/MyProducts/MyProducts";
 
 const router = createBrowserRouter([
     {
@@ -52,6 +54,14 @@ const router = createBrowserRouter([
             {
                 path: 'adminHome',
                 element: <AdminHome></AdminHome>
+            },
+            {
+                path: 'addProduct',
+                element: <AddProduct></AddProduct>
+            },
+            {
+                path: 'myProducts',
+                element: <MyProducts></MyProducts>
             }
         ]
     }
