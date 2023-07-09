@@ -1,6 +1,6 @@
 import React from "react";
 import useCart from "../../hooks/useCart";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import { FaTrashAlt } from "react-icons/fa";
 import Swal from "sweetalert2";
 
@@ -40,9 +40,6 @@ const MyCart = () => {
       <div className="uppercase font-semibold lg:h-[60px] lg:flex justify-evenly items-center gap-10 my-5">
         <h2 className="text-3xl">Total Orders: {cart?.length}</h2>
         <h2 className="text-3xl">Total Price: ${total}</h2>
-        {/* <Link to="/payment">
-          <button className="btn btn-primary btn-sm text-white">Pay</button>
-        </Link> */}
         <button onClick={handlePayment} className="btn btn-primary btn-sm text-white">Pay</button>
       </div>
       <div className="overflow-x-auto w-full">

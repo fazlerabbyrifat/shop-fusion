@@ -7,6 +7,8 @@ import Products from "../pages/Products/Products";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
 import MyCart from "../pages/MyCart/MyCart";
 import Payment from "../pages/Payment/Payment";
+import Dashboard from "../layout/Dashboard";
+import AdminHome from "../pages/Dashboard/AdminHome/AdminHome";
 
 const router = createBrowserRouter([
     {
@@ -40,6 +42,16 @@ const router = createBrowserRouter([
             {
                 path: '/payment',
                 element: <Payment></Payment>
+            }
+        ]
+    },
+    {
+        path: 'dashboard',
+        element: <Dashboard></Dashboard>,
+        children: [
+            {
+                path: 'adminHome',
+                element: <AdminHome></AdminHome>
             }
         ]
     }
