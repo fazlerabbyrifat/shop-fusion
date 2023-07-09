@@ -6,7 +6,7 @@ import useCart from "../../hooks/useCart";
 
 const Navbar = () => {
   const {cart} = useCart();
-  console.log(cart)
+  
   const navItems = (
     <>
       <li>
@@ -16,7 +16,7 @@ const Navbar = () => {
         <Link to="/products">Products</Link>
       </li>
       <li>
-        <Link to="/">
+        <Link to="/myCart">
           <FaShoppingCart></FaShoppingCart>
           <span>{cart?.length}</span>
         </Link>
